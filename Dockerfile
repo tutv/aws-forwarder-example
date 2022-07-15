@@ -1,6 +1,6 @@
 FROM nginx:stable-alpine
 
-COPY src/nginx.conf /etc/nginx/nginx.conf
-COPY src/entrypoint.sh /root/
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY entrypoint.sh /root/
 
 ENTRYPOINT [ "sh", "/root/entrypoint.sh" ]
